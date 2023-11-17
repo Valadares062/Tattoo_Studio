@@ -1,0 +1,161 @@
+body {
+    background-image: url(/media/cortefundo.jpg);
+    background-color: black;
+    height: 100vh; /* corrigido de 100ch para 100vh */
+    background-position: center; /* ajustado de absolute para center */
+    background-repeat: repeat;
+    background-size: cover;
+    color: antiquewhite;
+    padding: 0; /* ajustado de 0 auto para 0 */
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* ajustado de black para white */
+    padding: 10px;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.nav_links{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    color: white;
+    
+}
+
+.nav_links li{
+    display: inline-block;
+    margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav_links li{
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    padding: 15px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.nav_links li:hover{
+    background-color: #675e90;
+    transition: .5s;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    color: white;    
+   
+}
+
+
+#nometxt{
+    flex-direction: row;
+    font-size: 1.5vmax;    
+    width: fit-content;
+    padding: 0%;
+}
+
+#missao{
+    display: flex;
+    font-size: 200%;
+    padding: 0%;
+}
+
+main{
+    
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    height: 700px;
+    justify-content: center;
+}
+
+.galeria{
+    display: flex;
+    height: fit-content;
+}
+
+.fotosmain{
+    height: fit-content;  
+    height: 400px;
+    overflow: hidden;
+}
+
+.fotosmain img{
+    width: 350px;
+    max-height: 350px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.fotosmain img:hover{
+    transform: scale(1);
+    transition: .4s;
+}
+
+.info{
+    height: 150px;
+    width: 350px;
+    box-sizing: border-box;
+    position: absolute;
+    color: white;
+    
+
+
+}
+
+
+
+
+footer{
+    background-color: black;
+    margin: 0 auto;
+    height: fit-content;
+    width: auto;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+
+.fechamento{
+    width: 400px;
+}
+
+#final{
+    font-size: 40px;
+    padding: 0px;
+}
+
+.externos{
+    align-items: center;
+    align-content: center;
+    margin-left: 20px;
+    justify-content: space-between;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.mapa{
+    padding: 20px;
+    align-items: center;
+    border-style: hidden;
+    border-radius: 20px;
+    
+
+}
