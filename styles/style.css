@@ -1,14 +1,15 @@
 body {
     background-image: url(/media/cortefundo.jpg);
     background-color: black;
-    height: 100vh; /* corrigido de 100ch para 100vh */
     background-position: center; /* ajustado de absolute para center */
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     color: antiquewhite;
     padding: 0; /* ajustado de 0 auto para 0 */
     margin: 0;
 }
+
+
 
 header {
     display: flex;
@@ -49,20 +50,29 @@ h1 {
 }
 
 .nav_links li:hover{
-    background-color: #675e90;
+    background-color: #8e0a6b;
     transition: .5s;
 }
 
 aside{
     display: flex;
     flex-direction: column;
-    color: white;    
-   
+    color: #000;
+    background-color: #000;
+    opacity: .8;
+}
+
+#missao, 
+#nometxt{
+    color: white;
+    padding: 0px;
+    margin: 2px;
+
 }
 
 
 #nometxt{
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.5vmax;    
     width: fit-content;
     padding: 0%;
@@ -70,92 +80,84 @@ aside{
 
 #missao{
     display: flex;
-    font-size: 200%;
+    font-size: 20px;
     padding: 0%;
+    
 }
 
 main{
-    
     display: flex;
-    background-color: #000;
+    flex-direction: row;
     align-items: center;
-    height: 700px;
     justify-content: center;
+    flex-wrap: wrap;
 }
-
-.galeria{
-    display: flex;
-    height: fit-content;
-}
-
-.fotosmain{
-    height: fit-content;  
-    height: 400px;
-    overflow: hidden;
-}
-
 .fotosmain img{
-    width: 350px;
-    max-height: 350px;
-    margin: 50px;
-    border-radius: 5px;
-}
-
-.fotosmain img:hover{
-    transform: scale(1);
-    transition: .4s;
-}
-
-.info{
-    height: 150px;
-    width: 350px;
-    box-sizing: border-box;
-    position: absolute;
-    color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin: auto;
+    height: 300px;
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    overflow: hidden;
     
+    
+}
 
-
+.fotosmain:hover{
+    position: relative;
+    background-color: #8e0a6b;
+    transition: .5s;
+    border-radius: 25px;
+    transform: scale(1.1);
+    transition: all 1s ease;
 }
 
 
+.title{
+    bottom: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
 
+}
+.text{
+    max-width: 280px;
+    justify-content: center;
+    margin: 0px 28px ;
+}
 
 footer{
-    background-color: black;
-    margin: 0 auto;
-    height: fit-content;
-    width: auto;
-    padding: 0%;
     display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 35px;
+    padding-bottom: 0px;
     flex-wrap: wrap;
-    justify-content: space-between;
-
     
+  
+    justify-content: space-between;
 }
 
 .fechamento{
-    width: 400px;
-}
-
-#final{
-    font-size: 40px;
-    padding: 0px;
-}
-
-.externos{
+    flex-direction: column;
+    max-width: 600px;
     align-items: center;
+    font-size: 25px
+
+}
+.externos{
+    font-size: 20px;
     align-content: center;
-    margin-left: 20px;
-    justify-content: space-between;
-    background-color: cadetblue;
-    text-align: center;
+    justify-content: center;
 }
 
 .mapa{
-    padding: 20px;
-    align-items: center;
-    border-style: hidden;
+    border: hidden;
     border-radius: 20px;
-    
-
 }
